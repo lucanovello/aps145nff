@@ -1,0 +1,26 @@
+﻿Workshop 2: Weather Service
+by: Luca Novello (gnovello)
+
+1. Start/Previous Logic
+2. Is precipitation accumulation <= 3.0mm?
+   a. Yes: Output Message: “No action required.”: Continue (step 9)
+   b. No: Continue (step 3)
+3. Is precipitation accumulation > 3.0 - 5.5 mm?
+   a. Yes: Continue (step 4)
+   b. No: Continue (step 6)
+4. Is the temperature < -15.0?
+   a. Yes: Output Message: “1 (Normal) sand truck is required.”: Continue (step 9)
+   b. No: Continue (step 5)
+5. Is the temperature between 15.0 to -7.0?
+   a. Yes: Output Message: “1 (Normal) salt truck is required.”: Continue (step 9)
+   b. No: Continue (step 9) 
+6. Is precipitation accumulation > 5.5 - 17.0 mm?
+   a. Yes: Continue (step 7)
+   b. No: Output Message: “State of Emergency! Organize army and other jurisdiction support.”: Continue (step 9)
+7. Is the temperature < -15.0?
+   a. Yes: Output Message: “2 (Heavy) sand truck is required.”: Continue (step 9)
+   b. No: Continue (step 8)
+8. Is the temperature 15.0 to -7.0?
+   a. Yes: Output Message: “2 (Heavy) salt truck is required.”: Continue (step 9)
+   b. No: Output Message: “1 (Heavy) salt truck is required.”: Continue (step 9)
+9. End/Next Logic
